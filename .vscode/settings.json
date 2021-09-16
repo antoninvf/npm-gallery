@@ -1,0 +1,4 @@
+{
+    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter",
+    "editor.formatOnPaste": true
+}
