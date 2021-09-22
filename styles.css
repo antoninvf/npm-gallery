@@ -7,15 +7,42 @@ body {
 .header {
     display: flex;
     justify-content: center;
-    z-index: -1;
+    align-items: center;
     width: 100%;
     height: 10vh;
-    background-color: lightgray;
+    background-color: rgba(0, 0, 0, 0.034);
+    box-shadow: 0 0 0.3vh black;
+}
+
+.yarn {
+    padding-right: 2vh;
+    font-size: 5vh;
+    color: #2188B6;
 }
 
 .title {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
     font-size: 5vh;
 }
 
-.gallerycontainer {}
+.contain_it_all {
+    display: flex;
+    justify-content: center;
+}
+
+.gallerycontainer {
+    padding-top: 5vh;
+    display: flex;
+    gap: 1vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+
+img {
+    width: 20vh;
+    height: 20vh;
+    object-fit: cover;
+    cursor: pointer;
+}
