@@ -3,16 +3,54 @@
 
 <head>
     <meta charset="utf-8">
-    <title>yeah but who</title>
+    <title>NPM/YARN Gallery</title>
     <link rel="stylesheet" href="styles.css">
-
+    <link type="text/css" rel="stylesheet" href="node_modules/lightgallery/css/lightgallery-bundle.css" />
+    <link type="text/css" rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="header">
-        <p class="title">NPM/YARN Gallery</p>
+        <i class="fab fa-yarn yarn"></i>
+        <p class="title">NPM/Yarn Gallery</p>
     </div>
 
+    <div class="contain_it_all">
+        <div class="gallerycontainer" id="lightgallery">
+            <a href="img/1.png"><img src="img/1.png" alt="albansky buh smrti" /></a>
+            <a href="img/2.png"><img src="img/2.png" alt="kodytek :D" /></a>
+            <a href="img/3.png"><img src="img/3.png" alt="eva swag" /></a>
+            <a href="img/4.png"><img src="img/4.png" alt="ondr" /></a>
+            <a href="img/5.png"><img src="img/5.png" alt="chutná mu" /></a>
+            <a href="img/6.png"><img src="img/6.png" alt="jdou si pro nás" /></a>
+            <a href="img/7.png"><img src="img/7.png" alt="obama" /></a>
+            <a href="img/8.png"><img src="img/8.png" alt="sex" /></a>
+            <a href="img/9.png"><img src="img/9.png" alt="omg morgan freeman" /></a>
+            <a href="img/10.jpg"><img src="img/10.jpg" alt="nastup" /></a>
+            <a href="img/11.jpg"><img src="img/11.jpg" alt="gazda gazdovič" /></a>
+            <a href="img/12.png"><img src="img/12.png" alt="dan ma swag" /></a>
+            <a data-video='{"source": [{"src":"/img/13.mp4", "type":"video/mp4"}], 
+        "attributes": {"preload": false, "controls": true, "loop":true}}' data-poster="/img/13.png">
+                <img src="img/13.png"></a>
+            <a data-video='{"source": [{"src":"/img/14.mp4", "type":"video/mp4"}], 
+        "attributes": {"preload": false, "controls": true, "loop":true}}' data-poster="/img/14.png" alt="">
+                <img src="img/14.png"></a>
+        </div>
+    </div>
+
+    <script src="node_modules/lightgallery/lightgallery.umd.js"></script>
+    <script src="node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="node_modules/lightgallery/plugins/video/lg-video.umd.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgThumbnail, lgVideo],
+            speed: 0,
+            licenseKey: 'dragon_these_nuts_across_your_face',
+        });
+    </script>
 </body>
 
 </html>
