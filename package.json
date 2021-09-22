@@ -5,6 +5,7 @@
     "dependencies": {
         "-": "^0.0.1",
         "@fortawesome/fontawesome": "^1.1.8",
+        "@fortawesome/fontawesome-free": "^5.15.4",
         "free": "^1.0.0",
         "lightgallery": "^2.2.1"
     }
